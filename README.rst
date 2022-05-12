@@ -88,10 +88,10 @@ TODO
 - [x] Switch to Jinja2 template
 - [x] Refactor
 - [x] Add support for skipped tests
+- [x] Release pypi package
 - [ ] Option for combine/separate report files
 - [ ] Add tests
-- [ ] Add documentations
-- [ ] Release pypi package
+- [ ] Improve documentations
 
 
 Credits
