@@ -2,7 +2,7 @@
 History
 =======
 
-0.2.2 (2022-05-13)
+0.2.3 (2022-05-13)
 ------------------
 
-* First **real** release.
+* First **real** release on pypi.
