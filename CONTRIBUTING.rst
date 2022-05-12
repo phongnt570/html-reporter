@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/phongnt570/html_reporter/issues.
+Report bugs at https://github.com/phongnt570/html-reporter/issues.
 
 If you are reporting a bug, please include:
 
@@ -45,7 +45,7 @@ articles, and such.
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/phongnt570/html_reporter/issues.
+The best way to send feedback is to file an issue at https://github.com/phongnt570/html-reporter/issues.
 
 If you are proposing a feature:
 
@@ -57,17 +57,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `html_reporter` for local development.
+Ready to contribute? Here's how to set up `html-reporter` for local development.
 
-1. Fork the `html_reporter` repo on GitHub.
+1. Fork the `html-reporter` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/html_reporter.git
+    $ git clone git@github.com:your_name_here/html-reporter.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
     $ mkvirtualenv html_reporter
-    $ cd html_reporter/
+    $ cd html-reporter/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -102,8 +102,8 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and for PyPy. Check
-   https://travis-ci.com/phongnt570/html_reporter/pull_requests
+3. The pull request should work for Python 3.6, 3.7 and 3.8, and for PyPy. Check
+   https://app.travis-ci.com/github/phongnt570/html-reporter/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips

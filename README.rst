@@ -18,6 +18,14 @@ html-reporter
 A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
 at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <http://tungwaiyip.info/about.html>`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
 
+
+Getting started
+---------------
+
+Install ``html-reporter`` with ``pip`` (see :ref:`usage` for more details)::
+
+    pip install html-reporter
+
 ``HTMLTestRunner`` is a counterpart to ``unittest.TextTestRunner``. Instantiate an ``HTMLTestRunner`` object and use it to run
 your test suite.
 
@@ -72,7 +80,17 @@ Example using ``unittest.TestSuite``:
 Features
 --------
 
-* TODO
+TODO
+----
+
+- [x] Switch to Jinja2 template
+- [x] Refactor
+- [x] Add support for skipped tests
+- [ ] Option for combine/separate report files
+- [ ] Add tests
+- [ ] Add documentations
+- [ ] Release pypi package
+
 
 Credits
 -------
