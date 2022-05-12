@@ -19,6 +19,7 @@
 #
 import os
 import sys
+
 sys.path.insert(0, os.path.abspath('..'))
 
 import html_reporter
@@ -31,7 +32,17 @@ import html_reporter
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.todo",
+    "sphinx.ext.coverage",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.githubpages",
+    "sphinx.ext.napoleon",
+    "recommonmark",
+    "autoapi.extension",
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -77,7 +88,6 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False
 
-
 # -- Options for HTML output -------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -96,12 +106,10 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-
 # -- Options for HTMLHelp output ---------------------------------------
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'html_reporterdoc'
-
 
 # -- Options for LaTeX output ------------------------------------------
 
@@ -132,7 +140,6 @@ latex_documents = [
      'Tuan-Phong Nguyen', 'manual'),
 ]
 
-
 # -- Options for manual page output ------------------------------------
 
 # One entry per manual page. List of tuples
@@ -142,7 +149,6 @@ man_pages = [
      'html-reporter Documentation',
      [author], 1)
 ]
-
 
 # -- Options for Texinfo output ----------------------------------------
 
@@ -158,5 +164,32 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+github_url = "https://github.com/phongnt570/html-reporter"
+
+napoleon_google_docstring = True
+
+# autoapi_keep_files = True
+autoapi_type = "python"
+autoapi_dirs = ["../html_reporter"]
+autoapi_ignore = ["*tests/*", "flycheck_*"]
+autoapi_options = ["members", "undoc-members", "show-inheritance",
+                   "show-module-summary"]
+autoapi_python_class_content = "both"
 
 
+def skip_check(app, what, name, obj, would_skip, options):
+    # if name == "__init__":
+    #     return False
+    return would_skip
+
+
+from recommonmark.transform import AutoStructify
+
+
+def setup(app):
+    app.connect("autoapi-skip-member", skip_check)
+
+    # https://recommonmark.readthedocs.io/en/latest/auto_structify.html
+    app.add_config_value("recommonmark_config", {
+        "enable_auto_doc_ref": False, "enable_eval_rst": True}, True)
+    app.add_transform(AutoStructify)
