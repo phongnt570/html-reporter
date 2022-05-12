@@ -5,4 +5,4 @@ from .result import stdout_redirector, stderr_redirector
 
 __author__ = 'Tuan-Phong Nguyen'
 __email__ = 'tuanphong94@gmail.com'
-__version__ = '0.2.2'
+__version__ = '0.2.3'
