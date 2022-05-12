@@ -1,5 +1,6 @@
 """This module contains the OutputRedirector class."""
 
+
 class OutputRedirector(object):
     """ Wrapper to redirect stdout or stderr. """
 

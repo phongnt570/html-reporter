@@ -21,7 +21,7 @@ DEFAULT_TEMPLATE = os.path.join(os.path.dirname(
 @dataclass
 class TestCaseReport:
     """Class to keep track of a test case report which is used by the ``Jinja2`` template.
-    
+
     :param tid: HTML test case ID (e.g., 'pt1.1', 'ft1.1', 'et1.1', 'st1.1')
     :type tid: str
     :param desc: test case description
@@ -39,7 +39,7 @@ class TestCaseReport:
 @dataclass
 class TestGroupReport:
     """Class to keep track of a test group report which is used by the ``Jinja2`` template.
-    
+
     :param cid: HTML test group ID (e.g., 'c1')
     :type cid: str
     :param desc: test group description
@@ -232,7 +232,7 @@ class HTMLTestRunner(object):
         # HTML test case ID, e.g. 'pt1.1', 'ft1.1', 'et1.1', etc
         test_case_id = ('p' if test_status == TestStatus.PASS
                         else 'f' if test_status == test_status.FAIL else 'e' if test_status == TestStatus.ERROR else 's') \
-            + f"t{cid + 1}.{tid + 1}"
+                       + f"t{cid + 1}.{tid + 1}"
         # get name of the test method only
         name = test_case.id().split('.')[-1]
         doc = test_case.shortDescription() or ""
