@@ -1,5 +1,5 @@
 Welcome to html-reporter's documentation!
-======================================
+=========================================
 
 .. toctree::
    :maxdepth: 2

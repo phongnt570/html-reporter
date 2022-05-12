@@ -15,8 +15,54 @@ html-reporter
 
 
 
+A `TestRunner` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
+at a glance. This package was inspired by `HTMLTestRunner` by [Wai Yip Tung](http://tungwaiyip.info/about.html) and began with transforming the old code to use `Jinja2` template and adopting Bootstrap 5 CSS.
 
-A TestRunner for use with the Python unittest framework, which generates report in nice HTML files.
+`HTMLTestRunner` is a counterpart to `unittest.TextTestRunner`. Instantiate an `HTMLTestRunner` object and use it to run
+your test suite.
+
+Example using `unittest.main`:
+
+```python
+import unittest
+
+from HTMLTestRunner import HTMLTestRunner
+
+# output to a file
+if __name__ == "main":
+    runner = HTMLTestRunner(
+        report_filepath="my_report.html",
+        title="My unit test",
+        description="This demonstrates the report output by HTMLTestRunner.",
+        open_in_browser=True
+    )
+
+    # run the test
+    unittest.main(testRunner=runner)
+```
+
+Example using `unittest.TestSuite`:
+
+```python
+import unittest
+from HTMLTestRunner import HTMLTestRunner
+
+# output to a file
+if __name__ == "main":
+    my_test_suite = unittest.TestSuite()  # define your test suite
+    # add your test cases:
+    # my_test_suite.addTest(...)
+
+    runner = HTMLTestRunner(
+        report_filepath="my_report.html",
+        title="My unit test",
+        description="This demonstrates the report output by HTMLTestRunner.",
+        open_in_browser=True
+    )
+
+    # run the test
+    runner.run(my_test_suite)
+```
 
 
 * Free software: MIT license

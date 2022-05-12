@@ -5,9 +5,6 @@
 
 import unittest
 
-from html_reporter import html_reporter
-
-
 class TestHtml_reporter(unittest.TestCase):
     """Tests for `html_reporter` package."""
 

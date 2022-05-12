@@ -1,5 +1,9 @@
-"""Top-level package for html-reporter."""
+"""An HTMLTestRunner for Python which renders a nice HTML report for your ``unittest`` results."""
 
-__author__ = """Tuan-Phong Nguyen"""
-__email__ = 'tuanphong94@gmail.com'
-__version__ = '0.1.1'
+
+from .runner import HTMLTestRunner
+from .result import stdout_redirector, stderr_redirector
+
+__author__ = "Tuan-Phong Nguyen"
+__email__ = "tuanphong94@gmail.com"
+__version__ = "0.1.0"
