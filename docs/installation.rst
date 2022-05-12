@@ -32,7 +32,7 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/phongnt570/html_reporter
+    $ git clone git://github.com/phongnt570/html-reporter
 
 Or download the `tarball`_:
 
