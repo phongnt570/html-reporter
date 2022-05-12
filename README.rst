@@ -15,54 +15,54 @@ html-reporter
 
 
 
-A `TestRunner` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
-at a glance. This package was inspired by `HTMLTestRunner` by [Wai Yip Tung](http://tungwaiyip.info/about.html) and began with transforming the old code to use `Jinja2` template and adopting Bootstrap 5 CSS.
+A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
+at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <http://tungwaiyip.info/about.html>`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
 
-`HTMLTestRunner` is a counterpart to `unittest.TextTestRunner`. Instantiate an `HTMLTestRunner` object and use it to run
+``HTMLTestRunner`` is a counterpart to ``unittest.TextTestRunner``. Instantiate an ``HTMLTestRunner`` object and use it to run
 your test suite.
 
-Example using `unittest.main`:
+Example using ``unittest.main``:
 
-```python
-import unittest
+.. code-block:: python
 
-from HTMLTestRunner import HTMLTestRunner
+    import unittest
 
-# output to a file
-if __name__ == "main":
-    runner = HTMLTestRunner(
-        report_filepath="my_report.html",
-        title="My unit test",
-        description="This demonstrates the report output by HTMLTestRunner.",
-        open_in_browser=True
-    )
+    from html_reporter import HTMLTestRunner
 
-    # run the test
-    unittest.main(testRunner=runner)
-```
+    # output to a file
+    if __name__ == "main":
+        runner = HTMLTestRunner(
+            report_filepath="my_report.html",
+            title="My unit test",
+            description="This demonstrates the report output by HTMLTestRunner.",
+            open_in_browser=True
+        )
 
-Example using `unittest.TestSuite`:
+        # run the test
+        unittest.main(testRunner=runner)
 
-```python
-import unittest
-from HTMLTestRunner import HTMLTestRunner
+Example using ``unittest.TestSuite``:
 
-# output to a file
-if __name__ == "main":
-    my_test_suite = unittest.TestSuite()  # define your test suite
-    # add your test cases:
-    # my_test_suite.addTest(...)
+.. code-block:: python
 
-    runner = HTMLTestRunner(
-        report_filepath="my_report.html",
-        title="My unit test",
-        description="This demonstrates the report output by HTMLTestRunner.",
-        open_in_browser=True
-    )
+    import unittest
+    from html_reporter import HTMLTestRunner
 
-    # run the test
-    runner.run(my_test_suite)
-```
+    # output to a file
+    if __name__ == "main":
+        my_test_suite = unittest.TestSuite()  # define your test suite
+        # add your test cases:
+        # my_test_suite.addTest(...)
+
+        runner = HTMLTestRunner(
+            report_filepath="my_report.html",
+            title="My unit test",
+            description="This demonstrates the report output by HTMLTestRunner.",
+            open_in_browser=True
+        )
+
+        # run the test
+        runner.run(my_test_suite)
 
 
 * Free software: MIT license
