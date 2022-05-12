@@ -12,7 +12,7 @@ To install html-reporter, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install html_reporter
+    $ pip install html-reporter
 
 This is the preferred method to install html-reporter, as it will always install the most recent stable release.
 
@@ -38,7 +38,7 @@ Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl -OJL https://github.com/phongnt570/html_reporter/tarball/master
+    $ curl -OJL https://github.com/phongnt570/html-reporter/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/phongnt570/html_reporter
-.. _tarball: https://github.com/phongnt570/html_reporter/tarball/master
+.. _Github repo: https://github.com/phongnt570/html-reporter
+.. _tarball: https://github.com/phongnt570/html-reporter/tarball/master
