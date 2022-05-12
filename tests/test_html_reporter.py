@@ -2,10 +2,10 @@
 
 """Tests for `html_reporter` package."""
 
-
 import unittest
 
-class TestHtml_reporter(unittest.TestCase):
+
+class TestHtmlReporter(unittest.TestCase):
     """Tests for `html_reporter` package."""
 
     def setUp(self):

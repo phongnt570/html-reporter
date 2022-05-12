@@ -6,8 +6,8 @@ from io import StringIO
 from typing import List
 from unittest import TestCase, TestResult
 
-from .status import TestStatus
 from .redirector import OutputRedirector
+from .status import TestStatus
 
 # The redirectors are used to capture output during testing. Output
 # sent to sys.stdout and sys.stderr are automatically captured. However
@@ -25,7 +25,7 @@ stderr_redirector = OutputRedirector(sys.stderr)
 @dataclass
 class TestCaseResult:
     """A dataclass representing a test case result.
-    
+
     :param status: the test case status
     :type status: TestStatus
     :param test_case: the test case object
@@ -43,7 +43,8 @@ class TestCaseResult:
 
 class HTMLTestResult(TestResult):
     """HTMLTestResult is a pure representation of results.
-    It lacks the output and reporting ability compares to ``unittest.TextTestResult``."""
+    It lacks the output and reporting ability compares to
+    ``unittest.TextTestResult``."""
 
     def __init__(self, descriptions=None, verbosity: int = 1):
         """Constructor.
@@ -106,9 +107,11 @@ class HTMLTestResult(TestResult):
 
     def stopTest(self, test):
         """Called when the given test has been run."""
-        # Usually one of addSuccess, addError or addFailure, addSkip would have been called.
+        # Usually one of addSuccess, addError or addFailure, addSkip would have
+        # been called.
         # But there are some path in unittest that would bypass this.
-        # We must disconnect stdout in stopTest(), which is guaranteed to be called.
+        # We must disconnect stdout in stopTest(), which is guaranteed to be
+        # called.
         self.complete_output()
 
     def addSuccess(self, test):
@@ -118,7 +121,7 @@ class HTMLTestResult(TestResult):
         output = self.complete_output()
         self.result.append(TestCaseResult(TestStatus.PASS, test, output, ''))
         if self.show_all:
-            sys.stderr.write(f"ok\n")
+            sys.stderr.write("ok\n")
         else:
             sys.stderr.write('.')
 
@@ -130,7 +133,7 @@ class HTMLTestResult(TestResult):
         self.result.append(TestCaseResult(
             TestStatus.ERROR, test, output, _exc_str))
         if self.show_all:
-            sys.stderr.write(f"ERROR\n")
+            sys.stderr.write("ERROR\n")
         else:
             sys.stderr.write('E')
 
@@ -142,7 +145,7 @@ class HTMLTestResult(TestResult):
         self.result.append(TestCaseResult(
             TestStatus.FAIL, test, output, _exc_str))
         if self.show_all:
-            sys.stderr.write(f"FAIL\n")
+            sys.stderr.write("FAIL\n")
         else:
             sys.stderr.write('F')
 
@@ -158,4 +161,5 @@ class HTMLTestResult(TestResult):
             sys.stderr.write('S')
 
     def total_count(self):
-        return self.pass_count + self.fail_count + self.error_count + self.skip_count
+        return self.pass_count + self.fail_count \
+               + self.error_count + self.skip_count

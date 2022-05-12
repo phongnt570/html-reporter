@@ -1,7 +1,9 @@
-"""An HTMLTestRunner for Python which renders a nice HTML report for your ``unittest`` results."""
+"""An HTMLTestRunner for Python which renders a nice HTML report for
+``unittest`` results."""
 
 from .runner import HTMLTestRunner
-from .result import stdout_redirector, stderr_redirector
+
+HTMLTestRunner = HTMLTestRunner
 
 __author__ = 'Tuan-Phong Nguyen'
 __email__ = 'tuanphong94@gmail.com'
