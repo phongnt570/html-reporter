@@ -162,4 +162,4 @@ class HTMLTestResult(TestResult):
 
     def total_count(self):
         return self.pass_count + self.fail_count \
-               + self.error_count + self.skip_count
+            + self.error_count + self.skip_count

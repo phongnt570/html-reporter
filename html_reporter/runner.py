@@ -65,7 +65,7 @@ class TestGroupReport:
 
     def total_count(self):
         return self.pass_count + self.fail_count \
-               + self.fail_count + self.skip_count
+            + self.fail_count + self.skip_count
 
 
 class HTMLTestRunner(object):
@@ -87,10 +87,10 @@ class HTMLTestRunner(object):
         :param title: HTML page title, defaults to "Unit Test Report"
         :type title: str, optional
         :param description: description of the report,
-        defaults to "Unit Test Report Description"
+            defaults to "Unit Test Report Description"
         :type description: str, optional
-        :param template: path to the template file, if nothing is given,
-        it uses the default template, defaults to None
+        :param template: path to the template file,
+            if nothing is given, it uses the default template, defaults to None
         :type template: Union[str, Path], optional
         :param open_in_browser: option to open the report file in browser
         ßafter rendering, defaults to False
