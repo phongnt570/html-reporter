@@ -22,9 +22,11 @@ at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <h
 Getting started
 ---------------
 
-Install ``html-reporter`` with ``pip`` (see :ref:`usage` for more details)::
+Install ``html-reporter`` with ``pip`` (see :ref:`usage` for more details):
 
-    pip install html-reporter
+.. code-block:: console
+
+    $ pip install html-reporter
 
 ``HTMLTestRunner`` is a counterpart to ``unittest.TextTestRunner``. Instantiate an ``HTMLTestRunner`` object and use it to run
 your test suite.
