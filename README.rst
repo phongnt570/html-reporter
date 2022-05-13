@@ -22,7 +22,7 @@ at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <h
 Getting started
 ---------------
 
-``html-reporter`` requires Python 3.6 or later.
+``html-reporter`` requires Python 3.7 or later.
 
 Install
 ~~~~~~~
@@ -106,7 +106,8 @@ TODO
 Credits
 -------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+- This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+- This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <http://tungwaiyip.info/about.html>`_
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

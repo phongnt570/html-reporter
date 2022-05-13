@@ -3,7 +3,6 @@ python:
 - 3.9
 - 3.8
 - 3.7
-- 3.6
 install:
     - pip install -U importlib_metadata
     - pip install -U tox-travis

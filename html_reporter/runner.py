@@ -137,7 +137,7 @@ class HTMLTestRunner(object):
                 webbrowser.open_new_tab(
                     f"file://{self.report_filepath.absolute()}")
         finally:
-            pass
+            self.stream.close()
         return result
 
     def generate_report(self, result: HTMLTestResult) -> None:
