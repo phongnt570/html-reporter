@@ -17,12 +17,18 @@ class TestHtmlReporter(unittest.TestCase):
         """Tear down test fixtures, if any."""
 
     def test_000_constructor(self):
-        """Test something."""
+        """Test HTMLTestRunner constructor"""
         try:
-            runner = HTMLTestRunner(report_filepath='/tmp/test_report.html')
-            runner.run(unittest.TestSuite())
+            runner = HTMLTestRunner(
+                report_filepath='/tmp/test_report_000.html')
+            result = runner.run(unittest.TestSuite())
         except Exception as e:
             raise e
 
         self.assertEqual(runner.title, "Unit Test Report")
         self.assertEqual(runner.description, "Unit Test Report Description")
+        self.assertEqual(result.pass_count, 0)
+        self.assertEqual(result.fail_count, 0)
+        self.assertEqual(result.error_count, 0)
+        self.assertEqual(result.skip_count, 0)
+        self.assertEqual(result.total_count(), 0)
