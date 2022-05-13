@@ -3,7 +3,7 @@
 
 from .runner import HTMLTestRunner
 
-HTMLTestRunner = HTMLTestRunner
+__all__ = ['HTMLTestRunner']
 
 __author__ = 'Tuan-Phong Nguyen'
 __email__ = 'tuanphong94@gmail.com'

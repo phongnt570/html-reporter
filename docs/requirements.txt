@@ -3,3 +3,4 @@ sphinx
 recommonmark
 sphinx-autoapi
 profane
+sphinx_rtd_theme
