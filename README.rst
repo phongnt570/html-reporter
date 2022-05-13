@@ -62,11 +62,10 @@ Example using ``unittest.main``:
 .. code-block:: python
 
     import unittest
-
     from html_reporter import HTMLTestRunner
 
     # output to a file
-    if __name__ == "main":
+    if __name__ == "__main__":
         runner = HTMLTestRunner(
             report_filepath="my_report.html",
             title="My unit test",
@@ -85,7 +84,7 @@ Example using ``unittest.TestSuite``:
     from html_reporter import HTMLTestRunner
 
     # output to a file
-    if __name__ == "main":
+    if __name__ == "__main__":
         my_test_suite = unittest.TestSuite()  # define your test suite
         # add your test cases:
         # my_test_suite.addTest(...)
