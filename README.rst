@@ -23,7 +23,14 @@ html-reporter
 
 
 A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
-at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
+at a glance. This package was inspired by ``HTMLTestRunner.py`` written by `Wai Yip Tung`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
+
+
+.. image:: _static/demo.gif
+        :alt: Test Results
+        :height: 300px
+        :align: center
+
 
 
 Getting started
@@ -117,8 +124,8 @@ Credits
 -------
 
 - This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-- This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung`_
+- This package was inspired by ``HTMLTestRunner.py`` written by `Wai Yip Tung`_
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-.. _`Wai Yip Tung`: <http://tungwaiyip.info/about.html>
+.. _`Wai Yip Tung`: http://tungwaiyip.info/about.html
