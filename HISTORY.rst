@@ -2,7 +2,8 @@
 History
 =======
 
-0.2.4 (2022-05-13)
+0.2.5 (2022-05-13)
 ------------------
 
-* First **real** release on pypi.
+* First tested release on pypi.
+* Support and tested with Python3.7 -> Python 3.9.
