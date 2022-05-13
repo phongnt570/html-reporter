@@ -21,9 +21,20 @@ html-reporter
         :target: https://pypi.org/project/html-reporter
         :alt: Supported Python Versions
 
+What is html-reporter?
+----------------------
 
-A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
-at a glance. This package was inspired by ``HTMLTestRunner.py`` written by `Wai Yip Tung`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
+``html_reporter.HTMLTestRunner`` is a Python test runner for use with its unittest framework.
+After running the test cases, it generates a report in an HTML file to show the results
+in a nice, human-readable way. This package was inspired by ``HTMLTestRunner.py`` written by
+`Wai Yip Tung`_ and began with transforming the old code to use ``Jinja2`` template and
+adopting Bootstrap 5 CSS.
+
+``html_reporter`` could be useful in programming classes, where teachers/lectures want to
+show the test results of students' code, or for anyone who wants to see a nicer test report
+than the boring terminal output.
+
+Following is an example of the output HTML file:
 
 
 .. image:: _static/demo.gif
@@ -64,6 +75,8 @@ Example using ``unittest.main``:
     import unittest
     from html_reporter import HTMLTestRunner
 
+    # define your test cases
+
     # output to a file
     if __name__ == "__main__":
         runner = HTMLTestRunner(
@@ -83,6 +96,8 @@ Example using ``unittest.TestSuite``:
     import unittest
     from html_reporter import HTMLTestRunner
 
+    # define your test cases
+
     # output to a file
     if __name__ == "__main__":
         my_test_suite = unittest.TestSuite()  # define your test suite
@@ -100,12 +115,6 @@ Example using ``unittest.TestSuite``:
         runner.run(my_test_suite)
 
 
-* Free software: MIT license
-* Documentation: https://html-reporter.readthedocs.io.
-
-
-Features
---------
 
 TODO
 ----
