@@ -14,6 +14,7 @@ html-reporter
         :alt: Documentation Status
 
 .. image:: https://img.shields.io/github/license/phongnt570/html-reporter.svg
+        :target: https://opensource.org/licenses/MIT
         :alt: License
 
 
