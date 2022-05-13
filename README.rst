@@ -4,10 +4,10 @@ html-reporter
 
 
 .. image:: https://img.shields.io/pypi/v/html-reporter.svg
-        :target: https://pypi.python.org/pypi/html-reporter
+        :target: https://pypi.org/project/html-reporter
 
 .. image:: https://img.shields.io/travis/phongnt570/html-reporter.svg
-        :target: https://travis-ci.com/phongnt570/html-reporter
+        :target: https://app.travis-ci.com/github/phongnt570/html-reporter
 
 .. image:: https://readthedocs.org/projects/html-reporter/badge/?version=latest
         :target: https://html-reporter.readthedocs.io/en/latest/?version=latest
