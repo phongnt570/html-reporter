@@ -13,6 +13,8 @@ html-reporter
         :target: https://html-reporter.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
+.. image:: https://img.shields.io/github/license/phongnt570/html-reporter.svg
+        :alt: License
 
 
 A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
