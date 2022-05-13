@@ -22,11 +22,20 @@ at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <h
 Getting started
 ---------------
 
-Install ``html-reporter`` package (required Python3.6 or later):
+``html-reporter`` requires Python 3.6 or later.
+
+Install
+~~~~~~~
+
+Install the package via pip:
 
 .. code-block:: console
 
     $ pip install html-reporter
+
+
+Usage
+~~~~~
 
 ``HTMLTestRunner`` is a counterpart to ``unittest.TextTestRunner``. Instantiate an ``HTMLTestRunner`` object and use it to run
 your test suite.
