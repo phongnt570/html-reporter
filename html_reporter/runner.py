@@ -248,7 +248,7 @@ class HTMLTestRunner(object):
             test_code = "e"
         elif test_status == test_status.SKIP:
             test_code = "s"
-        test_case_id = f"{test_code}{cid + 1}.{tid + 1}"
+        test_case_id = f"{test_code}t{cid + 1}.{tid + 1}"
 
         # get name of the test method only
         name = test_case.id().split('.')[-1]
