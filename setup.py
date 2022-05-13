@@ -27,6 +27,8 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
     description="A TestRunner for use with the Python unittest framework, which generates report in nice HTML files.",
     install_requires=requirements,
@@ -38,7 +40,7 @@ setup(
     packages=find_packages(include=['html_reporter', 'html_reporter.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/phongnt570/html_reporter',
+    url='https://github.com/phongnt570/html-reporter',
     version='0.2.4',
     zip_safe=False,
 )

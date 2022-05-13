@@ -22,7 +22,7 @@ at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung <h
 Getting started
 ---------------
 
-Install ``html-reporter`` package:
+Install ``html-reporter`` package (required Python3.6 or later):
 
 .. code-block:: console
 
