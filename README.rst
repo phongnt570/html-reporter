@@ -17,6 +17,10 @@ html-reporter
         :target: https://opensource.org/licenses/MIT
         :alt: License
 
+.. image:: https://img.shields.io/pypi/pyversions/html-reporter.svg
+        :target: https://pypi.org/project/html-reporter
+        :alt: Supported Python Versions
+
 
 A ``TestRunner`` for use with the Python unit testing framework. It generates a report in an HTML file to show the results
 at a glance. This package was inspired by ``HTMLTestRunner`` by `Wai Yip Tung`_ and began with transforming the old code to use ``Jinja2`` template and adopting Bootstrap 5 CSS.
