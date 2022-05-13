@@ -10,9 +10,9 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ "Jinja2" ]
+requirements = ["Jinja2"]
 
-test_requirements = [ ]
+test_requirements = []
 
 setup(
     author="Tuan-Phong Nguyen",
@@ -34,7 +34,8 @@ setup(
     license="MIT license",
     long_description=readme + '\n\n' + history,
     include_package_data=True,
-    keywords='html_reporter',
+    keywords=['html_reporter', 'unittest', 'testrunner',
+              'html-reporter', 'html-test-runner', 'htmltestrunner'],
     name='html_reporter',
     packages=find_packages(include=['html_reporter', 'html_reporter.*']),
     test_suite='tests',
