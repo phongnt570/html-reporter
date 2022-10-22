@@ -163,7 +163,7 @@ class HTMLTestRunner(object):
             test_groups=test_groups,
         )
 
-        with open(self.report_filepath, "w+") as fp:
+        with open(self.report_filepath, "w+", encoding="utf-8") as fp:
             fp.write(output)
 
     def generate_report_table(self, result: HTMLTestResult) \
