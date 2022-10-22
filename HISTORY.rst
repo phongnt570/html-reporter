@@ -6,4 +6,4 @@ History
 ------------------
 
 * First tested release on pypi.
-* Support and tested with Python3.7 -> Python 3.9.
+* Support and tested with Python3.7 -> Python 3.10.
